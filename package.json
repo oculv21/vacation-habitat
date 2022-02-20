@@ -1,0 +1,14 @@
+{
+  "name": "vacation-habitat",
+  "version": "1.0.0",
+  "description": "A website for travelers to book a place to stay.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olivia Culver",
+  "license": "ISC",
+  "dependencies": {
+    "bootswatch": "^5.1.3"
+  }
+}

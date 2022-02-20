@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/quartz/bootstrap.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+   <title>Vacation Habitat</title>
+</head>
+
+<body>
+   <header class="sticky-top">
+      <!--Main Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#">Vacation Habitat</a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+               aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex justify-content-end">
+               <div class="collapse navbar-collapse " id="mainNav">
+                  <ul class="navbar-nav">
+                     <li class="nav-item align-self-center">
+                        <a class="nav-link active" href="#">Home
+                           <span class="visually-hidden">(current)</span>
+                        </a>
+                     </li>
+                     <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">About</a>
+                     </li>
+                     <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">Trips</a>
+                     </li>
+                     <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">Favorites</a>
+                     </li>
+                     <li class="nav-item align-self-center dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true" aria-expanded="false"><img class="img-fluid profile-pic"
+                              src="images/vh-round-profile-pic.png" alt="profile picture"></a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">My Account</a>
+                           <a class="dropdown-item" href="#">Become a Host</a>
+                           <a class="dropdown-item" href="#">Help Center</a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="#">Settings</a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+
+
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col px-0 mx-xxl-auto">
+            <img class="img-fluid position-relative opacity-75 d-block mx-xxl-auto" src="images/oceanfront-oasis.jpg"
+               alt="Oceanfront vacation home">
+            <div class="position-absolute top-50 start-50 translate-middle">
+               <h1 class="text-center main-heading">Find Your Next Vacation Habitat</h1>
+               <form class="d-none d-md-block">
+                  <div class="row mb-1">
+                     <div class="col-lg pb-1">
+                        <input class="form-control" name="location" list="datalistLocations" id="locationDataList"
+                           placeholder="Search..." aria-label="Travel Location Search">
+                        <datalist id="datalistLocations">
+                           <option value="Toronto">
+                           <option value="New York">
+                           <option value="Los Angeles">
+                           <option value="Chicago">
+                           <option value="London">
+                           <option value="Paris">
+                           <option value="Tulum">
+                           <option value="Bali">
+                        </datalist>
+                     </div>
+                     <div class="col-lg-4 pb-1">
+                        <input type="date" class="form-control" placeholder="Date" name="dates" aria-label="Travel Dates">
+                     </div>
+                     <div class="col-lg">
+                        <select class="form-control" name="numTravelers" aria-label="Number of Travelers Selector">
+                           <option selected>Select # of Travelers</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6 or more">6+</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-4 col-lg-3 mx-auto">
+                        <button type="submit" class="btn btn-dark">Enter</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+      </div>
+   </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
