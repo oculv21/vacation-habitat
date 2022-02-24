@@ -19,7 +19,7 @@
 <body>
    <header class="sticky-top">
       <!--Main Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">Vacation Habitat</a>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -65,49 +65,109 @@
 
 
    <div class="container-fluid">
+      <!--HERO image-->
       <div class="row">
          <div class="col px-0 mx-xxl-auto">
             <img class="img-fluid position-relative opacity-75 d-block mx-xxl-auto" src="images/oceanfront-oasis.jpg"
                alt="Oceanfront vacation home">
             <div class="position-absolute top-50 start-50 translate-middle">
                <h1 class="text-center main-heading">Find Your Next Vacation Habitat</h1>
-               <form class="d-none d-md-block">
-                  <div class="row mb-1">
-                     <div class="col-lg pb-1">
-                        <input class="form-control" name="location" list="datalistLocations" id="locationDataList"
-                           placeholder="Search..." aria-label="Travel Location Search">
-                        <datalist id="datalistLocations">
-                           <option value="Toronto">
-                           <option value="New York">
-                           <option value="Los Angeles">
-                           <option value="Chicago">
-                           <option value="London">
-                           <option value="Paris">
-                           <option value="Tulum">
-                           <option value="Bali">
-                        </datalist>
-                     </div>
-                     <div class="col-lg-4 pb-1">
-                        <input type="date" class="form-control" placeholder="Date" name="dates" aria-label="Travel Dates">
-                     </div>
-                     <div class="col-lg">
-                        <select class="form-control" name="numTravelers" aria-label="Number of Travelers Selector">
-                           <option selected>Select # of Travelers</option>
-                           <option value="1">1</option>
-                           <option value="2">2</option>
-                           <option value="3">3</option>
-                           <option value="4">4</option>
-                           <option value="5">5</option>
-                           <option value="6 or more">6+</option>
-                        </select>
-                     </div>
+               <div class="card bg-secondary d-none d-md-block">
+                  <div class="card-body">
+                     <form>
+                        <!--Reservation Form over Hero Image MD+ screens-->
+                        <div class="row mb-1">
+                           <div class="col-12 col-lg pb-1">
+                              <input class="form-control" name="location" list="datalistLocations" id="locationDataList"
+                                 placeholder="Search..." aria-label="Travel Location Search">
+                              <datalist id="datalistLocations">
+                                 <option value="Toronto">
+                                 <option value="New York">
+                                 <option value="Los Angeles">
+                                 <option value="Chicago">
+                                 <option value="London">
+                                 <option value="Paris">
+                                 <option value="Tulum">
+                                 <option value="Bali">
+                              </datalist>
+                           </div>
+                           <div class="col-6 col-lg-4 pb-1">
+                              <input type="date" class="form-control" placeholder="Date" name="dates"
+                                 aria-label="Travel Dates">
+                           </div>
+                           <div class="col-6 col-lg">
+                              <select class="form-control" name="numTravelers"
+                                 aria-label="Number of Travelers Selector">
+                                 <option selected disabled># of Travelers</option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                                 <option value="6 or more">6+</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col">
+                              <button type="submit" class="btn btn-success">Enter</button>
+                           </div>
+                        </div>
+                     </form>
                   </div>
-                  <div class="row">
-                     <div class="col-md-4 col-lg-3 mx-auto">
-                        <button type="submit" class="btn btn-dark">Enter</button>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="col mt-2 d-block d-md-none">
+            <div class="card bg-secondary">
+               <div class="card-body">
+                  <form>
+                     <!--Reservation Form under Hero on XS/SM screens-->
+                     <div class="row mb-1">
+                        <div class="pb-1">
+                           <input class="form-control" name="location" list="datalistLocations" id="locationDataList"
+                              placeholder="Search..." aria-label="Travel Location Search">
+                           <datalist id="datalistLocations">
+                              <option value="Toronto">
+                              <option value="New York">
+                              <option value="Los Angeles">
+                              <option value="Chicago">
+                              <option value="London">
+                              <option value="Paris">
+                              <option value="Tulum">
+                              <option value="Bali">
+                           </datalist>
+                        </div>
+                        <div class="pb-1">
+                           <input type="date" class="form-control" placeholder="Date" name="dates"
+                              aria-label="Travel Dates">
+                        </div>
+                        <div>
+                           <select class="form-control" name="numTravelers" aria-label="Number of Travelers Selector">
+                              <option selected>Select # of Travelers</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6 or more">6+</option>
+                           </select>
+                        </div>
                      </div>
-                  </div>
-               </form>
+                     <div class="row">
+                        <div class="col">
+                           <button type="submit" class="btn btn-success">Enter</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+
             </div>
 
          </div>

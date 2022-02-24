@@ -1,22 +1,27 @@
 body {
    font-family: 'Lora', serif;
    background-image: none;
-   background-color: #E9E9E8;
    color: #343a40;
 }
 
 .main-heading {
-   margin-bottom: 10rem;
+   margin-bottom: 15rem;
+   background: rgba(52,58,64,.3);
+   border-radius: .5rem;
    color: white;
 }
 
 @media (min-width:576px) {
    .main-heading {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
    }
 }
 
 .profile-pic {
    width: 3rem;
    height: auto;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+   position: inherit;
 }
